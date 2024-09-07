@@ -1,0 +1,21 @@
+meta {
+  name: Create manga
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/mangas
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "titulo": "Naruto",
+      "autor": "Masashi Kishimoto",
+      "genero": "Ação, Aventura",
+      "anoPublicacao": 1999,
+      "volumes": 72
+  }
+}
